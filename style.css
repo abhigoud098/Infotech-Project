@@ -1,21 +1,33 @@
+/* Reset some default browser styles and set base font */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #333;
+  font-family: "Arial", sans-serif;
 }
 
+/* Set base font size and smooth scrolling */
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 
+/* Set background color for the whole page */
 body {
-  font-family: "Arial", sans-serif;
-  line-height: 1.5;
-  color: #333;
   background-color: #fff;
 }
 
+/* Paragraph and heading line heights for readability */
+p {
+  line-height: 30px;
+}
+
+h1 {
+  line-height: 40px;
+}
+
+/* Navigation bar styles */
 nav {
   background-color: #fff;
   height: 60px;
@@ -26,14 +38,22 @@ nav {
   margin-top: 15px;
 }
 
+/* Normalize line height for nav children */
+nav * {
+  line-height: normal;
+}
+
+/* Company logo and name container */
 .company-name-icon {
   display: flex;
 }
 
+/* Company logo image size */
 .icon-of-company img {
   height: 58px;
 }
 
+/* Company name font sizes */
 .company {
   font-size: 24px;
 }
@@ -42,6 +62,7 @@ nav {
   font-size: 21px;
 }
 
+/* Navigation links styling */
 .home-about-etc ul {
   display: flex;
   list-style: none;
@@ -51,55 +72,55 @@ nav {
   margin-left: 60px;
 }
 
+/* Navigation call-to-action button */
 .nav-button {
-  height: 46px;
-  width: 147px;
+  padding: 10px 20px;
   background-color: #fa1239;
   color: #fff;
   border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Hero section background and layout */
 .hero {
   background: linear-gradient(to right, #ffbfca, #ffe7eb);
-  height: calc(100vh - 90px);
   width: 100%;
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 1130px;
-  padding: 50px;
+  padding: 0 50px;
 }
 
-.content-div {
-  height: 510px;
-  width: 620px;
+/* Hero section paragraph styling */
+.hero p {
+  margin-top: 30px;
+  width: 350px;
 }
 
-h1 {
+/* Hero section headline styling */
+.hero h1 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 48px;
 }
 
+/* Highlighted text color */
 span {
   color: #fa1239;
 }
 
-p {
-  width: 370px;
-  margin-top: 30px;
-}
-
+/* Underline image in hero headline */
 .big-headline-div img {
   width: 280px;
   height: 17px;
 }
 
-.image-div {
-  object-fit: cover;
-}
-
+/* First rating box (top right) */
 .rating-div {
+  position: absolute;
+  bottom: 180px;
+  right: 300px;
   background-color: #fff;
   height: 80px;
   width: 250px;
@@ -108,42 +129,63 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  margin-left: 30px;
   gap: 20px;
+  z-index: 1;
 }
 
+/* Second rating box (bottom right) */
+.rating-div2 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  height: 80px;
+  width: 250px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+  z-index: 1;
+}
+
+/* Large number in rating box */
 .num-div {
   color: #1cb098;
   font-size: 50px;
 }
 
+/* Cap icon in second rating box */
 .cap-div {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* Star icons in rating box */
 .star-div ul {
   display: flex;
   list-style: none;
 }
 
+/* Main hero image container */
+.image-div {
+  height: calc(100vh - 90px);
+}
+
 .image-div img {
-  height: 665px;
-  width: 633px;
+  height: 100%;
 }
 
+/* Container for the two main buttons in hero */
 .two-button-div {
   margin-top: 30px;
 }
 
-.two-button-div {
-  margin-top: 30px;
-}
-
+/* Resume packages button */
 .resume-btn {
-  height: 46px;
-  width: 202px;
+  padding: 10px 20px;
   color: #fa1239;
   background-color: #fff;
   border: 2px solid #fa1239;
@@ -151,59 +193,343 @@ p {
   box-shadow: 0 4px 10px 2px rgba(255, 0, 0, 0.5);
 }
 
+/* Contact button */
 .contact-btn {
-  height: 46px;
-  width: 202px;
+  padding: 10px 18px;
   color: #ffffff;
   background-color: #fa1239;
   border-radius: 50px;
   border: none;
-  margin-left: 30px;
 }
 
+/* What you get section background and centering */
 .what-you-get {
   background-color: #fff;
-  height: 100vh;
-  width: 100%;
-  min-width: 1130px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Main area for "what you get" section */
 .what-you-get-main-area {
   height: 678px;
-  width: 1600px;
-  border: 1px solid red;
   padding: 70px;
 }
 
+/* Headline container for "what you get" */
 .what-you-get-h1-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* Headline styling for "what you get" */
+.what-you-get-h1-div h1 {
+  margin-top: 30px;
+  font: bold;
+  font-size: 48px;
+  color: black;
+  text-align: center;
+  display: block;
+}
+
+/* "What you get" label styling */
 .what-you-get-div {
   background-color: #ffc2cc;
-  height: 30px;
-  width: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  font-weight: bolder;
 }
 
+/* Cards container: horizontal row, no scroll bar, cards stretch to fit */
 .main-container-of-card {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
   margin-top: 30px;
+  border: none;
+  gap: 30px;
+  overflow: auto;
+  gap: 30px;
+  box-sizing: content-box;
+  padding: 50px;
 }
 
+/* Individual card styling */
 .card-div {
+  flex: 1 1 0;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 -15px 25px rgba(255, 255, 255, 0.753), 0 0 20px rgba(255, 255, 255, 0.896);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+
+/* Card paragraph color */
+.card-div p {
+  color: #555;
+}
+
+/* Center all text inside card */
+.card-div * {
+  text-align: center;
+}
+
+/* Hamburger menu icon hidden by default (shown on mobile) */
+.hamburger {
+  display: none;
+}
+
+/* Responsive styles for tablets and mobile */
+@media (max-width: 1300px) {
+  /* Make nav bar more compact */
+  nav {
+    height: 30px;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  /* Hamburger menu icon visible on mobile */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: 10px;
+  }
+
+  /* Hamburger icon lines */
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 2px 0;
+    background: #000;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Background overlay for menu (covers whole screen, blurred) */
+  .background {
+    /* display: none; */
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  /* Side menu for mobile navigation */
+  .menu {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: #ffbfca;
+    z-index: 10;
+  }
+
+  /* X (close) button in menu, fixed at top right */
+  .menu .close-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 2.5rem;
+    color: #fa1239;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  /* Contact button inside menu, centered at bottom */
+  .menu button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+  }
+
+  /* Menu navigation links: vertical list */
+  .menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+
+  /* Menu link styles */
+  .menu ul li {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+  
+  /* Highlight first menu link */
+  .menu ul li:nth-child(1) {
+    color: #fa1239;
+  }
+
+  /* Company logo and name inside menu, fixed position */
+  .menu .company-name-icon {
+    position: fixed;
+    top: 10px;
+    left: 85px;
+  }
+
+  .menu .company-name-icon * {
+    line-height: normal;
+  }
+
+  /* Hamburger menu icon shown on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Add margin to first hero headline */
+  .hero h1:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  /* Company name font sizes smaller on mobile */
+  .company {
+    font-size: 21px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .icon-of-company img {
+    height: 45px;
+  }
+
+  /* Hide nav links and button on mobile */
+  nav .home-about-etc,
+  nav button {
+    display: none;
+  }
+
+  /* Stack hero section vertically on mobile */
+  .hero {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  /* Stack hero buttons vertically and center */
+  .two-button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* Center hero text on mobile */
+  .hero h1,
+  .hero p {
+    text-align: center;
+    margin: auto;
+  }
+
+  /* Smaller hero headline on mobile */
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    margin-top: 30px;
+  }
+
+  /* Main hero image responsive sizing */
+  .image-div {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Rating boxes smaller on mobile */
+  .rating-div,
+  .rating-div2 {
+    height: 64px;
+    z-index: 1;
+  }
+
+  /* Position first rating box lower on mobile */
+  .rating-div {
+    bottom: -200px;
+    left: 20px;
+    width: 250px;
+  }
+
+  /* Position second rating box lower on mobile */
+  .rating-div2 {
+    bottom: -290px;
+    right: 20px;
+    width: 200px;
+  }
+
+  .rating-div img,
+  .rating-div2 img {
+    height: 60px;
+  }
+
+  .star-div img {
+    height: 10px;
+  }
+
+  /* Stack cards vertically on mobile */
+  .main-container-of-card {
+    flex-direction: column;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Make hero image full width on mobile */
+  .image-div img {
+    width: 100vw;
+    height: auto;
+  }
+
+  /* Remove extra padding in "what you get" section */
+  .what-you-get-main-area {
+    padding: 0;
+  }
+
+  /* Smaller headline in "what you get" section */
+  .what-you-get-h1-div h1 {
+    font-size: 32px;
+  }
+
+  /* Set card width on mobile */
+  .card-div {
+    width: 300px;
+  }
+
+  /* Hide underline image in hero headline on mobile */
+  .big-headline-div img {
+    display: none;
+  }
 }
